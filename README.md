@@ -65,20 +65,27 @@ The database consists of the following main tables:
 2. **Extract the zip file:**
 unzip artefacts-database.zip
 3. **Import SQL files:**
+
 mysql -u your_username -p artefacts_and_locations < artefacts.sql
+
 mysql -u your_username -p artefacts_and_locations < artefacts_locations.sql
+
 mysql -u your_username -p artefacts_and_locations < categories.sql
+
 # ... import all other tables ...
 4. **Verify import:**
 
 USE artefacts_locations;
+
 SELECT COUNT(*) FROM artefacts;
+
 -- Should return ~200,000
 
 ### Sample Queries ###
 Find artefacts near a location
 ```sql
 use artefacts_and_locations;
+
 SELECT a.artefacts_name, a.web_reference_wiki, 
        al.latitude, al.longitude
 FROM artefacts a
@@ -86,18 +93,23 @@ JOIN artefacts_locations al ON a.id_artefacts = al.id_artefacts
 WHERE al.latitude BETWEEN 48.8 AND 48.9
   AND al.longitude BETWEEN 2.2 AND 2.4
 LIMIT 10;
+```
+-- Should return 10 rows
+
 
 ### Data Model ### 
 For detailed information about the data model and Java/Hibernate entities, see:
 ArtefactsLocation-model - [Java model library](https://github.com/MyropolskyiHennadii/ArtefactsLocation-model)
 
 ### Usage with Java ###
-This database is designed to work with the Hibernate ORM model library (install ArtefactsLocation-model before in your local repository):
-<dependency>
-    <groupId>myropolskyi.locations</groupId>
-    <artifactId>ArtefactsLocation-model</artifactId>
-    <version>2.2.2</version>
-</dependency>
+This database is designed to work with the Hibernate ORM model library. Install ArtefactsLocation-model before in your local repository and use this library as dependency.
+```xml
+  <dependency>
+      <groupId>myropolskyi.locations</groupId>
+      <artifactId>ArtefactsLocation-model</artifactId>
+      <version>2.2.2</version>
+  </dependency>
+```
 
 ### Data Sources ### 
 Data is curated from:
@@ -143,7 +155,7 @@ This project is being made public to ensure long-term preservation of this cultu
 
 ### Contact ### 
 Original Author: Hennadii Myropolskyi
-Email:miropolskij@gmail.com
+Email: miropolskij@gmail.com
 
 For questions, suggestions, or collaboration opportunities.
 
