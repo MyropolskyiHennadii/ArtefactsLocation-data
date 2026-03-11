@@ -25,9 +25,12 @@ This database contains curated information about architectural heritage from aro
 
 ## Download
 
-**Latest Release:** [v1.0.0](../../releases/latest)
+### GitHub Releases
+[Latest version](../../releases/latest) - `artefacts-database.zip` (27 MB)
 
-Download `artefacts-database.zip` (27 MB) containing complete MySQL dump files.
+### Zenodo (Permanent Archive)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18955341.svg)](https://doi.org/10.5281/zenodo.18955341)
+The Zenodo archive provides a permanent, citable version with guaranteed long-term preservation backed by CERN.
 
 ## Database Schema
 
