@@ -140,6 +140,22 @@ Under these terms:
 ⚠️ ShareAlike - Derivatives must use the same license (keep it free)
 
 Full license: https://creativecommons.org/licenses/by-sa/4.0/
+---
+
+ADDITIONAL PERMISSIONS
+
+OpenStreetMap Use
+-----------------
+In addition to the rights granted under CC BY-SA 4.0, the licensor (Hennadii Myropolskyi) 
+explicitly grants permission for this data to be used in OpenStreetMap under the 
+OpenStreetMap ODbL license (https://opendatacommons.org/licenses/odbl/).
+
+This permission allows OpenStreetMap contributors to:
+- Import and use this data in the OpenStreetMap database
+- Comply with ODbL requirements without conflicting with CC BY-SA 4.0
+- Attribute as: "ArtefactsLocation Database by Hennadii Myropolskyi"
+
+For OpenStreetMap import guidelines, see: https://wiki.openstreetmap.org/wiki/Import/Guidelines
 
 ### Related Projects ### 
 [LookAroundArchitecture] (https://apalladio.org/architecture-around/)
