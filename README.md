@@ -70,12 +70,15 @@ mysql -u your_username -p artefacts_and_locations < artefacts_locations.sql
 mysql -u your_username -p artefacts_and_locations < categories.sql
 # ... import all other tables ...
 4. **Verify import:**
+
 USE artefacts_locations;
 SELECT COUNT(*) FROM artefacts;
 -- Should return ~200,000
 
 ### Sample Queries ###
 Find artefacts near a location
+```sql
+use artefacts_and_locations;
 SELECT a.artefacts_name, a.web_reference_wiki, 
        al.latitude, al.longitude
 FROM artefacts a
@@ -86,10 +89,10 @@ LIMIT 10;
 
 ### Data Model ### 
 For detailed information about the data model and Java/Hibernate entities, see:
-ArtefactsLocation-model - Java model library ( https://github.com/MyropolskyiHennadii/ArtefactsLocation-model )
+ArtefactsLocation-model - [Java model library](https://github.com/MyropolskyiHennadii/ArtefactsLocation-model)
 
 ### Usage with Java ###
-This database is designed to work with the Hibernate ORM model library:
+This database is designed to work with the Hibernate ORM model library (install ArtefactsLocation-model before in your local repository):
 <dependency>
     <groupId>myropolskyi.locations</groupId>
     <artifactId>ArtefactsLocation-model</artifactId>
@@ -124,6 +127,32 @@ Under these terms:
 Full license: https://creativecommons.org/licenses/by-sa/4.0/
 
 ### Related Projects ### 
-[LookAroundArchitecture](https://apalladio.org/architecture-around/) 
-[Android mobile application] ( https://play.google.com/store/apps/details?id=myropolskyi.android.locations&pcampaignid=web_share )
+[LookAroundArchitecture] (https://apalladio.org/architecture-around/)
 
+[Android mobile application] (https://play.google.com/store/apps/details?id=myropolskyi.android.locations&pcampaignid=web_share)
+
+### Contributing ### 
+This database represents years of curation work. Contributions are welcome!
+If you find errors or want to add new objects:
+Fork this repository
+Make your changes
+Submit a pull request with documentation
+
+### Future Maintenance ### 
+This project is being made public to ensure long-term preservation of this cultural heritage data. If you're interested in maintaining or extending this database, please contact the original author.
+
+### Contact ### 
+Original Author: Hennadii Myropolskyi
+Email:miropolskij@gmail.com
+
+For questions, suggestions, or collaboration opportunities.
+
+### Citation ### 
+If you use this database in research or publications, please cite:
+Myropolskyi, H. (2026). ArtefactsLocation Database: A Comprehensive Collection 
+of Architectural Heritage Objects. GitHub. 
+[https://github.com/MyropolskyiHennadii/ArtefactsLocation-data](https://github.com/MyropolskyiHennadii/ArtefactsLocation-data)
+
+Last Updated: March 2026
+Database Version: 1.0.0
+Total Objects: 200,000+
