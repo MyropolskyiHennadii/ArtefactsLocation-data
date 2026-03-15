@@ -23,6 +23,11 @@ This database contains curated information about architectural heritage from aro
 - **Well-defined authors** - architects with Wikipedia references
 - **Historical events** - construction dates, significant modifications
 
+## How the Database Was Built
+
+See [METHODOLOGY.md](METHODOLOGY.md) for detailed description of the data collection 
+method, quality control process, and ongoing maintenance.
+
 ## Download
 
 ### GitHub Releases
