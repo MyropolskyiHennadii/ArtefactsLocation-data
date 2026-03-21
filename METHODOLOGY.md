@@ -113,7 +113,7 @@ The crawling and maintenance tools are written in Java. The data model is availa
 ## Statistics
 
 - **~200,000** architectural objects
-- **10-12** supported languages
+- **11** supported languages
 - **99%** of objects have a direct Wikipedia page link
 - **Annual error rate:** < 0.3%
 - **Manual additions:** < 0.02% of total volume
